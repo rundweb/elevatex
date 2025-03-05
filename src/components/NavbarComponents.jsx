@@ -47,7 +47,7 @@ const NavbarComponents = () => {
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
           <a
             href="#"
             className="text-2xl md:text-3xl font-semibold whitespace-nowrap text-gray-900 dark:text-white"
@@ -73,7 +73,7 @@ const NavbarComponents = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex flex-row items-center gap-4 flex-1 justify-end px-3">
+        <div className="hidden md:flex flex-row items-center gap-4 flex-1 justify-end px-3" data-aos="fade-left" data-aos-duration="1000">
           {menuItems.map((item, i) => (
             <Link
               key={i}
@@ -84,14 +84,14 @@ const NavbarComponents = () => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-1 justify-end md:block md:flex-none">
+        <div className="flex flex-1 justify-end md:block md:flex-none" data-aos="fade-left" data-aos-duration="1000">
           <ButtonMode />
         </div>
-        <div
+        <div 
           className="text-3xl text-gray-900 dark:text-white btn-x md:hidden"
           onClick={() => setOpenMenu(!openMenu)}
         >
-          {openMenu ? <HiOutlineMenuAlt3 /> : <IoClose />}
+          {openMenu ? <HiOutlineMenuAlt3 data-aos="fade-left" data-aos-duration="1000"/> : <IoClose />}
         </div>
       </div>
     </nav>

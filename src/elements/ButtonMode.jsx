@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
+import { IoMdMoon } from "react-icons/io";
 import { MdSunny } from "react-icons/md";
 
 const ButtonMode = () => {
@@ -26,7 +26,7 @@ const ButtonMode = () => {
         {darkMode ? (
           <MdSunny className="group-hover:scale-110" />
         ) : (
-          <FaMoon className="group-hover:scale-110" />
+          <IoMdMoon className="group-hover:scale-110" />
         )}
       </div>
     </div>
