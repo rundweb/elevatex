@@ -25,15 +25,15 @@ const ServicesComponents = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.slice(0, 4).map((item, i) => (
             <div key={i} data-aos="fade-up" data-aos-duration="1000">
-              <div className="p-6 py-8 border border-gray-300 rounded-xl flex flex-col gap-8 group cursor-pointer hover:scale-105 ease-in-out duration-500">
-                <div>
-                  <item.icon className="text-3xl text-blue-600 " />
+              <div className="p-6 py-8 border border-gray-300 rounded-xl flex flex-col gap-8 group cursor-pointer relative overflow-hidden  before:rotate-45 before:absolute before:w-96 before:h-0 before:bg-blue-500 before:top-1/2 before:-left-12 before:origin-center hover:before:h-96 hover:before:-translate-y-44 before:ease transition-all before:duration-500">
+                <div className="relative z-10">
+                  <item.icon className="text-3xl text-blue-600 group-hover:text-white duration-200" />
                 </div>
-                <div>
-                  <h1 className="font-bold mb-2 text-gray-900 dark:text-white ">
+                <div className="relative z-10">
+                  <h1 className="font-bold mb-2 text-gray-900 dark:text-white group-hover:text-white duration-200">
                     {item.title}
                   </h1>
-                  <h2 className="text-gray-500 dark:text-gray-400 ">
+                  <h2 className="text-gray-500 dark:text-gray-400 group-hover:text-white duration-200">
                     {item.description}
                   </h2>
                 </div>
@@ -64,15 +64,15 @@ const ServicesComponents = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div className="p-6 py-8 border border-gray-300 rounded-xl flex flex-col gap-8 group cursor-pointer hover:scale-105 ease-in-out duration-500">
-                <div>
-                  <item.icon className="text-3xl text-blue-600 " />
+              <div className="p-6 py-8 border border-gray-300 rounded-xl flex flex-col gap-8 group cursor-pointer relative overflow-hidden  before:rotate-45 before:absolute before:w-96 before:h-0 before:bg-blue-500 before:top-1/2 before:-left-12 before:origin-center hover:before:h-96 hover:before:-translate-y-44 before:ease transition-all before:duration-500">
+                <div className="relative z-10">
+                  <item.icon className="text-3xl text-blue-600 group-hover:text-white duration-200" />
                 </div>
-                <div>
-                  <h1 className="font-bold mb-2 text-gray-900 dark:text-white ">
+                <div className="relative z-10">
+                  <h1 className="font-bold mb-2 text-gray-900 dark:text-white group-hover:text-white duration-200">
                     {item.title}
                   </h1>
-                  <h2 className="text-gray-500 dark:text-gray-400 ">
+                  <h2 className="text-gray-500 dark:text-gray-400 group-hover:text-white duration-200">
                     {item.description}
                   </h2>
                 </div>
