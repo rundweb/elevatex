@@ -104,7 +104,7 @@ const FaqComponents = () => {
               setActiveCategory(category);
               setOpenIndex(null);
             }}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+            className={`px-4 py-2 rounded-lg text-base font-medium transition ${
               activeCategory === category
                 ? "gradient-primary text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -148,7 +148,7 @@ const FaqComponents = () => {
               </svg>
             </button>
             {openIndex === index && (
-              <div className="mt-2 text-gray-600 text-sm">{faq.answer}</div>
+              <div className="mt-2 text-gray-600 text-base dark:text-gray-400">{faq.answer}</div>
             )}
           </div>
         ))}

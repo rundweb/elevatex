@@ -19,7 +19,7 @@ const TestimonialComponents = () => {
           <span>What Our Clients Say</span>
         </h1>
         <h2
-          className="text-neutral-800 font-bold text-3xl md:text-4xl md:max-w-3xl text-center"
+          className="text-neutral-800 dark:text-white font-bold text-3xl md:text-4xl md:max-w-3xl text-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -31,7 +31,7 @@ const TestimonialComponents = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.slice(0, 6).map((item, i) => (
             <div key={i} data-aos="fade-up" data-aos-duration="1000">
-              <div className="flex flex-col gap-6 py-8 px-6 border-gray-100 dark:border-gray-500 border-2 rounded-xl group hover:scale-105 duration-300 ease-in-out hover:border-violet-400 hover:bg-violet-50">
+              <div className="flex flex-col gap-6 py-8 px-6 border-gray-100 dark:bg-transparent dark:border-gray-500 border-2 rounded-xl group hover:scale-105 duration-300 ease-in-out hover:border-violet-400 hover:bg-violet-50">
                 <div>
                   <p className="text-gray-800 dark:text-white font-semibold">
                     {item.testimonial}

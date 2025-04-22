@@ -205,6 +205,46 @@ const caseStudies = [
   }
 ];
 
+const pricing = [
+  {
+    title: "Starter",
+    price: "$199",
+    description: "Perfect for personal brands or freelancers just starting out.",
+    features: [
+      "1 Landing Page",
+      "Responsive Design",
+      "Basic SEO Setup",
+      "Delivery in 5 days",
+    ],
+    popular: false,
+  },
+  {
+    title: "Professional",
+    price: "$399",
+    description: "Great for consultants or small businesses wanting more impact.",
+    features: [
+      "Up to 5 Pages",
+      "Advanced Animations (GSAP)",
+      "SEO Optimization",
+      "Contact Form Integration",
+      "Delivery in 7 days",
+    ],
+    popular: true, // <-- untuk tanda "Best Value"
+  },
+  {
+    title: "Enterprise",
+    price: "Custom",
+    description: "Tailored solutions for larger companies or complex needs.",
+    features: [
+      "Unlimited Pages",
+      "Custom Integrations",
+      "Priority Support",
+      "Monthly Maintenance",
+      "Custom Timeline",
+    ],
+    popular: false,
+  }
+]
 
 
-export { menuItems, services,testimonials,caseStudies };
+export { menuItems, services,testimonials,caseStudies,pricing };
