@@ -3,7 +3,7 @@ import HomeComponents from '../components/HomeComponents'
 import AboutComponents from '../components/AboutComponents'
 import ServicesComponents from '../components/ServicesComponents'
 import PortfolioComponents from '../components/PortfolioComponents'
-// import TestimonialComponents from '../components/TestimonialComponents'
+import TestimonialComponents from '../components/TestimonialComponents'
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <AboutComponents/>
       <ServicesComponents/>
       <PortfolioComponents/>
-      {/* <TestimonialComponents/> */}
+      <TestimonialComponents/>
 
     </div>
   )
