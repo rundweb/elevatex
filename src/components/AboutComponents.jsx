@@ -106,7 +106,7 @@ const AboutComponents = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5">
         {countAbout.map((item, i) => (
           <div key={i} data-aos="fade-up" data-aos-duration="1000">
-            <div className="flex items-center justify-center flex-col gap-2 p-5 border border-gray-300 rounded-xl text-center cursor-pointer relative before:absolute before:h-80 before:w-80 before:translate-y-56 before:bg-blue-500 before:rounded-full  before:duration-700 transition-all hover:before:translate-y-0 overflow-hidden group">
+            <div className="flex items-center justify-center flex-col gap-2 p-5 border border-gray-300 rounded-xl text-center cursor-pointer relative before:absolute before:h-96 before:w-[28rem] before:translate-y-64 before:bg-blue-500 before:rounded-full  before:duration-700 transition-all hover:before:translate-y-12 group overflow-hidden">
               <h1 className="text-3xl font-semibold relative z-10 ">
                 <span className="group-hover:text-white duration-300 ease-in-out">
                   {item.count}

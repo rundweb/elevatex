@@ -2,6 +2,8 @@ import React from 'react'
 import HomeComponents from '../components/HomeComponents'
 import AboutComponents from '../components/AboutComponents'
 import ServicesComponents from '../components/ServicesComponents'
+import PortfolioComponents from '../components/PortfolioComponents'
+// import TestimonialComponents from '../components/TestimonialComponents'
 
 const Home = () => {
   return (
@@ -9,6 +11,9 @@ const Home = () => {
       <HomeComponents/>
       <AboutComponents/>
       <ServicesComponents/>
+      <PortfolioComponents/>
+      {/* <TestimonialComponents/> */}
+
     </div>
   )
 }
