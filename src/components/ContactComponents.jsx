@@ -6,7 +6,8 @@ const ContactComponents = () => {
   return (
     <div className="max-w-screen-xl m-auto min-h-screen p-4 lg:py-8 flex items-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex" data-aos="fade-up"
+            data-aos-duration="1000">
           <img
             src={contact}
             alt="contact-elevatex"
@@ -15,16 +16,19 @@ const ContactComponents = () => {
         </div>
         <div className="flex flex-col gap-5 h-max">
           <div className="flex flex-col gap-5 mb-2">
-            <h2 className="text-3xl font-medium">
+            <h2 className="text-3xl font-medium" data-aos="fade-up"
+            data-aos-duration="1000">
               <span>Send us a massage</span>
             </h2>
-            <p className="text-gray-600 font-medium dark:text-gray-300 text-lg">
+            <p className="text-gray-600 font-medium dark:text-gray-300 text-lg" data-aos="fade-up"
+            data-aos-duration="1000">
               Your <span>satisfaction</span> is our top priority, and we are{" "}
               <span>committed</span> to providing <span>exceptional</span>{" "}
               service and support
             </p>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" data-aos="fade-up"
+            data-aos-duration="1000">
             <label
               htmlFor="name"
               className="text-base text-gray-700 font-medium dark:text-gray-200"
@@ -38,7 +42,8 @@ const ContactComponents = () => {
               required
             />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" data-aos="fade-up"
+            data-aos-duration="1000">
             <label
               htmlFor="name"
               className="text-base text-gray-700 font-medium dark:text-gray-200"
@@ -52,7 +57,8 @@ const ContactComponents = () => {
               required
             />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" data-aos="fade-up"
+            data-aos-duration="1000">
             <label
               htmlFor="name"
               className="text-base text-gray-700 font-medium dark:text-gray-200"
@@ -66,7 +72,8 @@ const ContactComponents = () => {
               required
             />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" data-aos="fade-up"
+            data-aos-duration="1000">
             <label
               htmlFor="name"
               className="text-base text-gray-700 font-medium dark:text-gray-200"
@@ -82,7 +89,8 @@ const ContactComponents = () => {
               id=""
             ></textarea>
           </div>
-          <a
+          <a data-aos="fade-up"
+            data-aos-duration="1000"
             href=""
             className="gradient-primary text-center text-white font-medium h-12 flex items-center justify-center rounded-lg shadow-lg"
           >

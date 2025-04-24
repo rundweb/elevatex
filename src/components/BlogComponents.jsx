@@ -73,10 +73,18 @@ const BlogComponents = () => {
   return (
     <div className="max-w-screen-xl m-auto p-4 flex items-center justify-center min-h-screen flex-col gap-10">
       <div className="flex flex-col gap-5 text-center">
-        <h1 className="text-4xl font-semibold">
+        <h1
+          className="text-4xl font-semibold"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <span>Our recent blogs</span>
         </h1>
-        <p className="text-gray-600 font-medium dark:text-gray-400 text-lg">
+        <p
+          className="text-gray-600 font-medium dark:text-gray-400 text-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Surround yourself with the community and resource to help bring your
           vision to life.
         </p>
@@ -85,7 +93,11 @@ const BlogComponents = () => {
         <div className="lg:col-span-1">
           {blogPosts.slice(0, 1).map((item, i) => (
             <div key={i}>
-              <div className="flex flex-col gap-5">
+              <div
+                className="flex flex-col gap-5"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src={item.coverImage}
                   alt="blog-elevatex"
@@ -117,7 +129,11 @@ const BlogComponents = () => {
         <div className="lg:col-span-2 flex flex-col gap-8">
           {blogPosts.slice(1, 3).map((item, i) => (
             <div key={i}>
-              <div className="flex flex-col lg:flex-row gap-8">
+              <div
+                className="flex flex-col lg:flex-row gap-8"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src={item.coverImage}
                   alt="blog-elevatex"

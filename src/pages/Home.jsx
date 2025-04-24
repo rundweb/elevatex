@@ -8,6 +8,7 @@ import FaqComponents from '../components/FaqComponents'
 import PricingComponents from '../components/PricingComponents'
 import ContactComponents from '../components/ContactComponents'
 import BlogComponents from '../components/BlogComponents'
+import FooterComponents from '../components/FooterComponents'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <PricingComponents/>
       <ContactComponents/>
       <BlogComponents/>
+      <FooterComponents/>
     </div>
   )
 }
