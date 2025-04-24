@@ -22,6 +22,16 @@ const faqData = {
       answer:
         "We offer up to 3 major revisions during the design phase to ensure your vision is fully captured.",
     },
+    {
+      question: "Do you redesign existing websites?",
+      answer:
+        "Yes, we offer redesign services to improve layout, performance, and conversion rates while keeping your core identity intact.",
+    },
+    {
+      question: "Can you help with branding as well?",
+      answer:
+        "Absolutely. We provide logo design, color strategy, typography, and overall brand identity consultation.",
+    },
   ],
   Support: [
     {
@@ -44,6 +54,17 @@ const faqData = {
       answer:
         "We don’t directly provide hosting or domains, but we can help you choose and set up the best options based on your needs.",
     },
+
+    {
+      question: "Do you provide tutorials or guides?",
+      answer:
+        "Yes, we include basic documentation and video walkthroughs to help you understand your site.",
+    },
+    {
+      question: "How can I contact support after delivery?",
+      answer:
+        "You can reach us via email or through our dedicated client support portal. We typically respond within 24 hours.",
+    },
   ],
   Others: [
     {
@@ -65,6 +86,17 @@ const faqData = {
       question: "Do you offer rush delivery?",
       answer:
         "Yes, expedited delivery is available at an additional cost. Let us know your deadline and we’ll do our best to accommodate it.",
+    },
+
+    {
+      question: "Do you offer white-label services for agencies?",
+      answer:
+        "Yes, we offer white-label services where we work as an invisible partner for agencies and freelancers.",
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer:
+        "We accept bank transfers, PayPal, and Stripe for international transactions. Invoices are issued upon request.",
     },
   ],
 };
@@ -148,7 +180,9 @@ const FaqComponents = () => {
               </svg>
             </button>
             {openIndex === index && (
-              <div className="mt-2 text-gray-600 text-base dark:text-gray-400">{faq.answer}</div>
+              <div className="mt-2 text-gray-600 text-base dark:text-gray-400">
+                {faq.answer}
+              </div>
             )}
           </div>
         ))}

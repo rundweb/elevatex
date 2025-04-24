@@ -48,12 +48,12 @@ const PricingComponents = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {pricing.map((item, i) => (
             <div key={i} data-aos="fade-up" data-aos-duration="1000">
-              <div className="flex flex-col gap-7 shadow-xl rounded-2xl p-5 md:p-10 border-t-8 border-t-blue-500 relative overflow-hidden bg-white transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-blue-500 before:duration-500 before:ease-linear hover:bg-white hover:before:border-[200px] group">
+              <div className="flex flex-col gap-7 shadow-xl rounded-2xl p-5 py-10 md:p-10 border-t-8 border-t-blue-500 relative overflow-hidden bg-white transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-blue-500 before:duration-500 before:ease-linear hover:bg-white hover:before:border-[200px] group dark:bg-gray-800">
                 <div className="flex flex-col gap-5 relative z-10">
                   <h1 className="text-xl font-semibold ">
                     <span className="group-hover:text-white duration-300 ease-in-out">{item.title}</span>
                   </h1>
-                  <h2 className="font-bold text-5xl text-gray-800 dark:text-white">
+                  <h2 className="font-bold text-5xl text-gray-800 dark:text-white group-hover:text-white duration-300 ease-in-out">
                     {item.price}{" "}
                     <strong className="text-base font-medium text-gray-600 dark:text-white group-hover:text-white duration-300 ease-in-out">
                       / Month

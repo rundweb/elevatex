@@ -6,6 +6,7 @@ import PortfolioComponents from '../components/PortfolioComponents'
 import TestimonialComponents from '../components/TestimonialComponents'
 import FaqComponents from '../components/FaqComponents'
 import PricingComponents from '../components/PricingComponents'
+import ContactComponents from '../components/ContactComponents'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <TestimonialComponents/>
       <FaqComponents/>
       <PricingComponents/>
+      <ContactComponents/>
     </div>
   )
 }
