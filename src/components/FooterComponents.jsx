@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 import { menuItems } from "../assets/data/data";
 import ButtonBlue from "../elements/ButtonBlue";
+import { Link } from "react-router-dom";
 
 const FooterComponents = () => {
   const contactInfo = [
@@ -19,11 +20,11 @@ const FooterComponents = () => {
     },
   ];
   const products = [
-    { name: "Templates", path: "/templates" },
-    { name: "UI Kits", path: "/ui-kits" },
-    { name: "Plugins", path: "/plugins" },
-    { name: "Components", path: "/components" },
-    { name: "Licenses", path: "/licenses" },
+    { name: "Portfolio Detail", path: "/portodetail" },
+    { name: "Blog Detail", path: "/blogdetail" },
+    { name: "Service Detail", path: "/servicedetail" },
+    { name: "Login", path: "/login" },
+    { name: "Register", path: "/Register" },
   ];
 
   const resources = [
@@ -35,7 +36,7 @@ const FooterComponents = () => {
   ];
 
   return (
-    <div className="mt-10">
+    <div className="mt-5">
       <div className="max-w-screen-xl m-auto p-4 grid grid-cols-1 md:grid-cols-3 items-center">
         <div className="col-span-2 md:pr-16 flex flex-col gap-5 md:border-r-2 border-gray-100 dark:border-gray-600">
           <div className="flex flex-col gap-5 items-center sm:items-start">
@@ -58,35 +59,29 @@ const FooterComponents = () => {
             </div>
           </div>
           <div className="flex items-start justify-between border-t-2 border-gray-100 dark:border-gray-600 pt-10 mt-5">
-            <div className="flex flex-col gap-4">
-              <h1
-                className="text-gray-800 dark:text-white text-lg font-semibold mb-2"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+            <div className="flex flex-col gap-4" data-aos="fade-up"
+                data-aos-duration="1000">
+              <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
                 Menu
               </h1>
               {menuItems.map((item, i) => (
-                <div key={i} data-aos="fade-up" data-aos-duration="1000">
-                  <a
-                    href=""
+                <div key={i}>
+                  <Link
+                    to={item.path}
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-4">
-              <h1
-                className="text-gray-800 dark:text-white text-lg font-semibold mb-2"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                Products
+            <div className="flex flex-col gap-4" data-aos="fade-up"
+                data-aos-duration="1000">
+              <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
+                Pages
               </h1>
               {products.map((item, i) => (
-                <div key={i} data-aos="fade-up" data-aos-duration="1000">
+                <div key={i}>
                   <a
                     href=""
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
@@ -96,16 +91,13 @@ const FooterComponents = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-4">
-              <h1
-                className="text-gray-800 dark:text-white text-lg font-semibold mb-2"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+            <div className="flex flex-col gap-4" data-aos="fade-up"
+                data-aos-duration="1000">
+              <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
                 Resources
               </h1>
               {resources.map((item, i) => (
-                <div key={i} data-aos="fade-up" data-aos-duration="1000">
+                <div key={i}>
                   <a
                     href=""
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
@@ -152,7 +144,7 @@ const FooterComponents = () => {
         </div>
       </div>
       <div className="max-w-screen-xl m-auto p-4">
-        <div className=" border-t-2 border-gray-100 dark:border-gray-600 flex items-center justify-center pt-6 ">
+        <div className=" border-t-2 border-gray-100 dark:border-gray-600 flex items-center justify-center pt-4 ">
           <p className="text-sm font-normal text-gray-500">
             &#169;elevatex 2025, All right reserved.
           </p>
