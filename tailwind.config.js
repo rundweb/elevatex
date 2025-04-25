@@ -10,6 +10,9 @@ export default {
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
+      backgroundImage:{
+        "all" : "url('/src/assets/images/bg.jpg')"
+      }
     },
   },
   plugins: [],
