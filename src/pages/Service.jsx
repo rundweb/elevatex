@@ -12,11 +12,62 @@ import vertical2 from "../assets/images/vertical_2.jpg";
 import horizontal1 from "../assets/images/horizontal_1.jpg";
 import horizontal2 from "../assets/images/horizontal_2.jpg";
 
+//icon
+
+import {
+  FaSearch,
+  FaLightbulb,
+  FaPencilRuler,
+  FaCode,
+  FaRocket,
+  FaHandsHelping,
+} from "react-icons/fa";
+import ButtonBlue from "../elements/ButtonBlue";
+
+export const ourProcess = [
+  {
+    title: "Discovery & Research",
+    description:
+      "We dive deep into understanding your business, target audience, and competitors to build a strong foundation.",
+    icon: FaSearch,
+  },
+  {
+    title: "Strategy & Planning",
+    description:
+      "We create a clear, actionable plan that defines the site's structure, user flow, and key goals for maximum impact.",
+    icon: FaLightbulb,
+  },
+  {
+    title: "Design & Prototyping",
+    description:
+      "We craft visually engaging prototypes that bring your brand identity to life and focus on user experience.",
+    icon: FaPencilRuler,
+  },
+  {
+    title: "Development",
+    description:
+      "We transform designs into a live website using React.js and Tailwind CSS, ensuring performance, responsiveness, and SEO optimization.",
+    icon: FaCode,
+  },
+  {
+    title: "Testing & Launch",
+    description:
+      "We rigorously test every element to ensure speed, functionality, and accessibility before launching your website to the world.",
+    icon: FaRocket,
+  },
+  {
+    title: "Support & Growth",
+    description:
+      "After launch, we continue to monitor, optimize, and help your site grow with your business needs.",
+    icon: FaHandsHelping,
+  },
+];
+
 const Service = () => {
   return (
     <div className="mt-20">
       <CoverPage text={"Our Services"} />
-      <section className="max-w-screen-xl m-auto p-4 flex flex-col gap-10">
+      <section className="max-w-screen-xl m-auto p-4 flex flex-col gap-12">
         <div className="flex flex-col gap-8 md:gap-10">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-end">
             <div className="flex flex-col gap-5">
@@ -156,6 +207,81 @@ const Service = () => {
               className=" hover:scale-110 duration-300 ease-in-out h-96 w-full object-cover lg:h-full"
             />
           </div>
+        </div>
+        <div className="flex flex-col gap-5">
+          <h1
+            className="text-gray-800 font-bold text-3xl dark:text-white capitalize"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            we build digital experiences designed to drive growth
+          </h1>
+          <p
+            className="text-gray-600 dark:text-gray-400 font-medium"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            At ElevateX, building a custom website isn’t just about creating
+            something beautiful — it’s about building a powerful digital asset
+            tailored exactly to your business goals. We’ve honed our process to
+            make sure every project we take on delivers measurable results,
+            every single time.
+          </p>
+          <div className="flex gap-4 flex-col">
+            {ourProcess.map((item, i) => (
+              <div
+                key={i}
+                className="flex gap-4 items-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div className="text-blue-500 text-xl">
+                  <item.icon />
+                </div>
+                <h2 className="font-medium text-gray-600 dark:text-gray-400">
+                  <b>{item.title} : </b>
+                  {item.description}
+                </h2>
+              </div>
+            ))}
+          </div>
+
+          <p
+            className="text-gray-600 dark:text-gray-400 font-medium"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            We don’t just build websites — we build digital experiences designed
+            to drive growth, spark engagement, and evolve with your business.
+            Our proven process ensures clarity, creativity, and measurable
+            results from start to finish.
+          </p>
+          <div className="text-center space-y-4 p-4">
+            <h4
+              className="text-2xl font-semibold text-gray-800 dark:text-white"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Ready to Elevate Your Brand?
+            </h4>
+            <p
+              className="text-gray-700 dark:text-gray-400"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Let’s collaborate on something exceptional — whether it’s your
+              first digital product or a brand reboot.
+            </p>
+            <a
+              href="/contact"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="inline-block px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition duration-300 ease-in-out"
+            >
+              Let’s Talk
+            </a>
+          </div>
+          {/* <ButtonBlue text={"Contact Us"} /> */}
         </div>
       </section>
       <PortfolioComponents />
