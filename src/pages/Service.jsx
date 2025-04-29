@@ -24,7 +24,7 @@ import {
 } from "react-icons/fa";
 import ButtonBlue from "../elements/ButtonBlue";
 
-export const ourProcess = [
+const ourProcess = [
   {
     title: "Discovery & Research",
     description:
@@ -66,7 +66,7 @@ export const ourProcess = [
 const Service = () => {
   return (
     <div className="mt-20">
-      <CoverPage text={"Our Services"} />
+      <CoverPage text={"Service Detail"} />
       <section className="max-w-screen-xl m-auto p-4 flex flex-col gap-12">
         <div className="flex flex-col gap-8 md:gap-10">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-end">

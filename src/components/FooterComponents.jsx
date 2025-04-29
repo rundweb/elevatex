@@ -20,9 +20,9 @@ const FooterComponents = () => {
     },
   ];
   const products = [
-    { name: "Portfolio Detail", path: "/portodetail" },
+    { name: "Portfolio Detail", path: "/portfoliodetail" },
     { name: "Blog Detail", path: "/blogdetail" },
-    { name: "Service Detail", path: "/servicedetail" },
+    { name: "Service Detail", path: "/service" },
     { name: "Login", path: "/login" },
     { name: "Register", path: "/Register" },
   ];
@@ -82,12 +82,12 @@ const FooterComponents = () => {
               </h1>
               {products.map((item, i) => (
                 <div key={i}>
-                  <a
-                    href=""
+                  <Link
+                    to={item.path}
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

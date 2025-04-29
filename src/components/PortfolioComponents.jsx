@@ -5,6 +5,7 @@ import { caseStudies } from "../assets/data/data";
 
 // icon
 import { LuMoveRight } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const PortfolioComponents = () => {
   return (
@@ -55,10 +56,10 @@ const PortfolioComponents = () => {
                   <p className="hidden sm:block text-white font-normal w-[95%]">
                     {item.shortDescription}
                   </p>
-                  <a className="capitalize text-white font-normal text-base flex items-center gap-5">
+                  <Link to={'/portfoliodetail'} className="capitalize text-white font-normal text-base flex items-center gap-5">
                     Continue Reading{" "}
                     <LuMoveRight className="relative top-[1px]" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

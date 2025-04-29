@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { services } from "../assets/data/data";
 import ButtonBlue from "../elements/ButtonBlue";
 
@@ -53,9 +54,9 @@ const ServicesComponents = () => {
                 thrive in the digital landscape.
               </p>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000">
-              <ButtonBlue text={"See our Work"} />
-            </div>
+            <Link to={'/service'} data-aos="fade-up" data-aos-duration="1000">
+              <ButtonBlue text={"Service Detail"} />
+            </Link>
           </div>
           {services.slice(4, 6).map((item, i) => (
             <div
