@@ -4,6 +4,7 @@ import ButtonBlue from "../elements/ButtonBlue";
 
 // data
 import { blogPosts } from "../assets/data/data";
+import { Link } from "react-router-dom";
 const BlogComponents = () => {
   return (
     <div className="max-w-screen-xl m-auto p-4 flex items-center justify-center min-h-screen flex-col gap-10">
@@ -56,7 +57,9 @@ const BlogComponents = () => {
                     <span>{item.author}</span>
                   </p>
                 </div>
-                <ButtonBlue text={"Read More"} />
+                <Link to={"/blogdetail"}>
+                  <ButtonBlue text={"Read More"} />
+                </Link>
               </div>
             </div>
           ))}

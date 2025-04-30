@@ -29,7 +29,7 @@ const FooterComponents = () => {
 
   const resources = [
     { name: "Blog", path: "/blog" },
-    { name: "Case Studies", path: "/case-studies" },
+    { name: "Case Studies", path: "/portfoliodetail" },
     { name: "FAQ", path: "/faq" },
     { name: "Support", path: "/support" },
     { name: "Documentation", path: "/docs" },
