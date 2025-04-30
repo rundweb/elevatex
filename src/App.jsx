@@ -7,6 +7,7 @@ import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
 import { useEffect } from "react";
 import PortfolioDetail from "./components/PortfolioDetail";
+import Blog from "./pages/Blog";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ const App = () => {
         <Route exact path="/testimonials" element={<Testimonial />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
         <Route exact path="/portfoliodetail" element={<PortfolioDetail />}></Route>
+        <Route exact path="/blog" element={<Blog />}></Route>
       </Routes>
     </div>
   );

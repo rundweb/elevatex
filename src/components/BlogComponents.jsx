@@ -1,74 +1,9 @@
 import React from "react";
 
-// images
-import blog1 from "../assets/images/about_1.jpg";
-import blog2 from "../assets/images/about_2.jpg";
-import blog3 from "../assets/images/portfolio_1.jpg";
 import ButtonBlue from "../elements/ButtonBlue";
 
 // data
-const blogPosts = [
-  {
-    id: 1,
-    title: "5 Tips for Designing High-Converting Landing Pages",
-    slug: "designing-high-converting-landing-pages",
-    excerpt:
-      "Learn how to optimize your landing page layout, copy, and visuals to boost conversions and grow your business.",
-    coverImage: blog3,
-    date: "2025-04-20",
-    author: "Alexandra Lee",
-    category: "Design",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "How to Use GSAP for Subtle Micro-Interactions",
-    slug: "gsap-micro-interactions",
-    excerpt:
-      "A step-by-step guide to adding smooth, lightweight animations that delight users without slowing down your site.",
-    coverImage: blog2,
-    date: "2025-04-15",
-    author: "Michael Tan",
-    category: "Development",
-    featured: false,
-  },
-  {
-    id: 3,
-    title: "Building a Strong Visual Brand Identity",
-    slug: "building-visual-brand-identity",
-    excerpt:
-      "From color theory to typography, discover the key elements that make your brand memorable and cohesive.",
-    coverImage: blog1,
-    date: "2025-04-10",
-    author: "Sabrina Wijaya",
-    category: "Branding",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "SEO Essentials for Front-End Developers",
-    slug: "seo-essentials-front-end",
-    excerpt:
-      "Optimize your markup, meta tags, and performance to rank higher in search engines — even if you’re not an SEO expert.",
-    coverImage: "/images/blog/seo-essentials.jpg",
-    date: "2025-04-05",
-    author: "Rizal Ahmad",
-    category: "Development",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Case Study: Transforming Finova’s Online Booking",
-    slug: "case-study-finova-booking",
-    excerpt:
-      "A deep dive into how our digital transformation boosted Finova’s client bookings by 45% in 3 months.",
-    coverImage: "/images/blog/case-study-finova.jpg",
-    date: "2025-04-01",
-    author: "ElevateX Team",
-    category: "Case Study",
-    featured: false,
-  },
-];
+import { blogPosts } from "../assets/data/data";
 const BlogComponents = () => {
   return (
     <div className="max-w-screen-xl m-auto p-4 flex items-center justify-center min-h-screen flex-col gap-10">

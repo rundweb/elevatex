@@ -247,4 +247,143 @@ const pricing = [
 ]
 
 
-export { menuItems, services,testimonials,caseStudies,pricing };
+// images
+import blog1 from "../images/about_1.jpg";
+import blog2 from "../images/about_2.jpg";
+import blog3 from "../images/portfolio_1.jpg";
+import blog4 from "../images/contact.jpg";
+import blog5 from "../images/vertical_2.jpg";
+import blog6 from "../images/vertical_1.jpg";
+import blog7 from "../images/horizontal_1.jpg";
+import blog8 from "../images/horizontal_2.jpg";
+import blog9 from "../images/portfolio_2.jpg";
+import blog10 from "../images/portfolio_3.jpg";
+
+
+// data
+const blogPosts = [
+  {
+    id: 1,
+    title: "5 Tips for Designing High-Converting Landing Pages",
+    slug: "designing-high-converting-landing-pages",
+    excerpt:
+      "Learn how to optimize your landing page layout, copy, and visuals to boost conversions and grow your business.",
+    coverImage: blog3,
+    date: "20 Apr, 2025",
+    author: "Alexandra Lee",
+    category: "Design",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "How to Use GSAP for Subtle Micro-Interactions",
+    slug: "gsap-micro-interactions",
+    excerpt:
+      "A step-by-step guide to adding smooth, lightweight animations that delight users without slowing down your site.",
+    coverImage: blog2,
+    date: "15 Apr, 2025",
+    author: "Michael Tan",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "Building a Strong Visual Brand Identity",
+    slug: "building-visual-brand-identity",
+    excerpt:
+      "From color theory to typography, discover the key elements that make your brand memorable and cohesive.",
+    coverImage: blog1,
+    date: "10 Apr, 2025",
+    author: "Sabrina Wijaya",
+    category: "Branding",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "SEO Essentials for Front-End Developers",
+    slug: "seo-essentials-front-end",
+    excerpt:
+      "Optimize your markup, meta tags, and performance to rank higher in search engines.",
+    coverImage: blog4,
+    date: "05 Apr, 2025",
+    author: "Rizal Ahmad",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Case Study: Transforming Finova’s Online Booking",
+    slug: "case-study-finova-booking",
+    excerpt:
+      "A deep dive into how our digital transformation boosted Finova’s client bookings by 45% in 3 months.",
+    coverImage: blog5,
+    date: "01 Apr, 2025",
+    author: "ElevateX Team",
+    category: "Case Study",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "The Psychology Behind Effective CTA Buttons",
+    slug: "cta-button-psychology",
+    excerpt:
+      "Explore how color, placement, and wording impact user decisions and conversions.",
+    coverImage: blog6,
+    date: "25 Mar, 2025",
+    author: "Alexandra Lee",
+    category: "Marketing",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Integrating ChatGPT into Your Customer Workflow",
+    slug: "integrating-chatgpt-customer-workflow",
+    excerpt:
+      "Leverage AI tools to enhance support, automate responses, and improve engagement.",
+    coverImage: blog7,
+    date: "22 Mar, 2025",
+    author: "Michael Tan",
+    category: "AI",
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Typography Tips for Professional Web Interfaces",
+    slug: "typography-tips-web",
+    excerpt:
+      "Understand hierarchy, spacing, and type pairing to elevate your site’s readability.",
+    coverImage: blog8,
+    date: "18 Mar, 2025",
+    author: "Sabrina Wijaya",
+    category: "Design",
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "What We Learned from 100+ UX Audits",
+    slug: "ux-audit-lessons",
+    excerpt:
+      "Common mistakes and winning patterns we found after reviewing over a hundred user interfaces.",
+    coverImage: blog9,
+    date: "12 Mar, 2025",
+    author: "Rizal Ahmad",
+    category: "UX",
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "Optimizing Performance with Lazy Loading Techniques",
+    slug: "lazy-loading-performance",
+    excerpt:
+      "Improve speed and reduce bandwidth by loading images and content only when needed.",
+    coverImage: blog10,
+    date: "08 Mar, 2025",
+    author: "ElevateX Team",
+    category: "Development",
+    featured: false,
+  },
+];
+
+
+
+export { menuItems, services,testimonials,caseStudies,pricing,blogPosts };

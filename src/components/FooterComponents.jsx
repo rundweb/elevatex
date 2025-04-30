@@ -98,12 +98,11 @@ const FooterComponents = () => {
               </h1>
               {resources.map((item, i) => (
                 <div key={i}>
-                  <a
-                    href=""
+                  <Link to={item.path}
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
