@@ -57,7 +57,7 @@ const BlogComponents = () => {
                     <span>{item.author}</span>
                   </p>
                 </div>
-                <Link to={"/blogdetail"}>
+                <Link to={"/blogdetail"} className="cursor-pointer">
                   <ButtonBlue text={"Read More"} />
                 </Link>
               </div>
@@ -96,7 +96,8 @@ const BlogComponents = () => {
                       <span>{item.author}</span>
                     </p>
                   </div>
-                  <ButtonBlue text={"Read More"} />
+                  <Link to={'/blogdetail'} className="cursor-pointer">
+                  <ButtonBlue text={"Read More"} /></Link>
                 </div>
               </div>
             </div>

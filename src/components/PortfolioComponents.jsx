@@ -28,9 +28,9 @@ const PortfolioComponents = () => {
             <span>Grow.</span>
           </p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <Link to={'/portfolio'} data-aos="fade-up" data-aos-duration="1000" className="cursor-pointer">
           <ButtonBlue text={"View All"} />
-        </div>
+        </Link>
       </div>
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 md:flex-row">
@@ -56,7 +56,7 @@ const PortfolioComponents = () => {
                   <p className="hidden sm:block text-white font-normal w-[95%]">
                     {item.shortDescription}
                   </p>
-                  <Link to={'/portfoliodetail'} className="capitalize text-white font-normal text-base flex items-center gap-5">
+                  <Link to={'/portfoliodetail'} className="capitalize text-white font-normal text-base flex items-center gap-5 w-max">
                     Continue Reading{" "}
                     <LuMoveRight className="relative top-[1px]" />
                   </Link>
@@ -89,10 +89,10 @@ const PortfolioComponents = () => {
                   <p className="hidden sm:block text-white font-normal w-[95%]">
                     {item.shortDescription}
                   </p>
-                  <a className="capitalize text-white font-normal text-base flex items-center gap-5">
+                  <Link to={'/portfoliodetail'} className="capitalize text-white font-normal text-base flex items-center gap-5 w-max">
                     Continue Reading{" "}
                     <LuMoveRight className="relative top-[1px]" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

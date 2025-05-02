@@ -1,4 +1,5 @@
 // elements
+import { Link } from "react-router-dom";
 import ButtonBlue from "../elements/ButtonBlue";
 import ButtonGray from "../elements/ButtonGray";
 import ImageHome from "../elements/ImageHome";
@@ -32,8 +33,12 @@ const HomeComponents = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <ButtonBlue text={"Get Started"} />
-          <ButtonGray text={"Learn More"} />
+          <Link to={"/pricing"} className="cursor-pointer">
+            <ButtonBlue text={"Get Started"} />
+          </Link>
+          <Link className="cursor-pointer" to={"/about"}>
+            <ButtonGray text={"Learn More"} />
+          </Link>
         </div>
         <div
           className="mt-5 w-full border-t pt-10 md:pt-5 dark:border-gray-600"

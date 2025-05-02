@@ -96,7 +96,7 @@ const AboutComponents = () => {
               <p className="text-gray-500 dark:text-gray-400 hidden lg:inline-block">
                 {item.title}
               </p>
-              <Link to={"/about"} className="hidden items-center gap-3 text-blue-700 mt-4 group-hover:flex">
+              <Link to={"/about"} className="hidden items-center gap-3 text-blue-700 mt-4 group-hover:flex w-max">
                 Learn More <HiArrowNarrowRight className="relative top-[1px]" />
               </Link>
             </div>

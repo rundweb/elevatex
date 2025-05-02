@@ -2,13 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
     <title>ElevateX - Building Digital Products & Brands</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="ElevateX helps you build outstanding digital products and brands that drive growth and impact." />
+    <meta name="keywords" content="ElevateX, digital products, branding, business consulting, tech solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="ElevateX Team" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="ElevateX - Building Digital Products & Brands" />
+    <meta property="og:description" content="We help consultants and businesses create impactful digital products and brands." />
+    <meta property="og:image" content="/thumbnail.jpg" /> <!-- Replace with actual image -->
+    <meta property="og:url" content="https://rundweb.github.io/elevatex/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ElevateX - Building Digital Products & Brands" />
+    <meta name="twitter:description" content="Build next-level digital products with ElevateX." />
+    <meta name="twitter:image" content="/thumbnail.jpg" /> <!-- Replace with actual image -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./src/assets//images/icon.svg" />
+
+    <!-- Fonts: preload to prevent FOIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      rel="preload" 
+      as="style" 
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+      onload="this.rel='stylesheet'" 
+    />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <!-- Optional: Fallback font style -->
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

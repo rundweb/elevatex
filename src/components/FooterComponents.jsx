@@ -20,19 +20,16 @@ const FooterComponents = () => {
     },
   ];
   const products = [
-    { name: "Portfolio Detail", path: "/portfoliodetail" },
-    { name: "Blog Detail", path: "/blogdetail" },
-    { name: "Service Detail", path: "/service" },
+    { name: "Blog", path: "/blog" },
+    { name: "Case Studies", path: "/portfoliodetail" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "pricing", path: "/pricing" },
+    { name: "Pricing", path: "/pricing" },
   ];
 
   const resources = [
-    { name: "Blog", path: "/blog" },
-    { name: "Case Studies", path: "/portfoliodetail" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Support", path: "/support" },
-    { name: "Documentation", path: "/docs" },
+    { name: "Portfolio Detail", path: "/portfoliodetail" },
+    { name: "Blog Detail", path: "/blogdetail" },
+    { name: "Service Detail", path: "/service" },
   ];
 
   return (
@@ -59,8 +56,11 @@ const FooterComponents = () => {
             </div>
           </div>
           <div className="flex items-start justify-between border-t-2 border-gray-100 dark:border-gray-600 pt-10 mt-5">
-            <div className="flex flex-col gap-4" data-aos="fade-up"
-                data-aos-duration="1000">
+            <div
+              className="flex flex-col gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
                 Menu
               </h1>
@@ -75,8 +75,11 @@ const FooterComponents = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-4" data-aos="fade-up"
-                data-aos-duration="1000">
+            <div
+              className="flex flex-col gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
                 Pages
               </h1>
@@ -91,14 +94,18 @@ const FooterComponents = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-4" data-aos="fade-up"
-                data-aos-duration="1000">
+            <div
+              className="flex flex-col gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="text-gray-800 dark:text-white text-lg font-semibold mb-2">
-                Resources
+                Detail
               </h1>
               {resources.map((item, i) => (
                 <div key={i}>
-                  <Link to={item.path}
+                  <Link
+                    to={item.path}
                     className="text-gray-500 font-medium hover:text-blue-500 duration-300 ease-in-out cursor-pointer"
                   >
                     {item.name}
@@ -137,7 +144,7 @@ const FooterComponents = () => {
               className="h-12 border-2 border-gray-300 w-full rounded-lg px-5 text-gray-600 dark:bg-gray-900 outline-blue-500"
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000" className="cursor-pointer">
             <ButtonBlue text={"Subscribe"} />
           </div>
         </div>

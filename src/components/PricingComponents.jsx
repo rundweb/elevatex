@@ -28,7 +28,7 @@ const PricingComponents = () => {
         <div className="flex items-center gap-5">
           <a
             href=""
-            className="gradient-primary px-4 py-2 rounded-lg text-base font-medium text-white"
+            className="gradient-primary px-6 py-2 rounded-lg text-base font-medium text-white"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -36,7 +36,7 @@ const PricingComponents = () => {
           </a>
           <a
             href=""
-            className="bg-gray-100 px-4 py-2 rounded-lg text-base font-medium text-gray-400"
+            className="bg-gray-100 px-4 py-2 rounded-lg text-base font-normal text-gray-400"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
