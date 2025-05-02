@@ -29,6 +29,7 @@ const Blog = () => {
                     <img
                       src={item.coverImage}
                       alt="blogs"
+                      loading="lazy"
                       className="h-80 w-full object-cover group-hover:scale-110 duration-300 ease-in-out"
                     />
                   </div>
@@ -59,6 +60,7 @@ const Blog = () => {
                     <img
                       src={item.coverImage}
                       alt="blogs"
+                      loading="lazy"
                       className="h-60 w-full object-cover group-hover:scale-110 duration-300 ease-in-out"
                     />
                   </div>
@@ -101,6 +103,7 @@ const Blog = () => {
                       <img
                         src={item.coverImage}
                         alt="blog"
+                        loading="lazy"
                         className="w-full h-28 object-cover rounded-md"
                       />
                     </div>

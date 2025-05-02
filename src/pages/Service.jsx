@@ -141,6 +141,7 @@ const Service = () => {
             <img
               src={vertical1}
               alt="service-elevatex"
+              loading="lazy"
               className=" hover:scale-110 duration-300 ease-in-out h-96 w-full object-cover lg:h-full"
             />
           </div>
@@ -180,6 +181,7 @@ const Service = () => {
                 <img
                   src={horizontal1}
                   alt="services elevatex"
+                  loading="lazy"
                   className="h-52 w-full object-cover hover:scale-110 duration-300 ease-in-out"
                 />
               </div>
@@ -191,6 +193,7 @@ const Service = () => {
                 <img
                   src={horizontal2}
                   alt="services elevatex"
+                  loading="lazy"
                   className="h-52 w-full object-cover hover:scale-110 duration-300 ease-in-out"
                 />
               </div>
@@ -204,6 +207,7 @@ const Service = () => {
             <img
               src={vertical2}
               alt="service-elevatex"
+              loading="lazy"
               className=" hover:scale-110 duration-300 ease-in-out h-96 w-full object-cover lg:h-full"
             />
           </div>

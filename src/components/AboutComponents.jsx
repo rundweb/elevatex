@@ -83,6 +83,7 @@ const AboutComponents = () => {
               <img
                 src={item.images}
                 alt="about images"
+                loading="lazy"
                 className="rounded-xl h-72 lg:h-96 w-full object-cover group-hover:scale-110 ease-in-out duration-300"
               />
             </div>

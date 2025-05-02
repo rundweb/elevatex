@@ -135,6 +135,7 @@ const PortfolioDetail = () => {
           <img
             src={blog3}
             alt="Finova Overview"
+            loading="lazy"
             className="rounded-2xl shadow-md"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -146,6 +147,7 @@ const PortfolioDetail = () => {
           <img
             src={blog1}
             alt="Solutions Provided"
+            loading="lazy"
             className="rounded-2xl shadow-md order-2 md:order-1"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -269,6 +271,7 @@ const PortfolioDetail = () => {
                     <img
                       src={porto4}
                       alt="foto portfolio"
+                      loading="lazy"
                       className="rounded-xl h-96 w-full object-cover"
                     />
                     <div className="flex flex-col gap-2">

@@ -40,7 +40,8 @@ const PortfolioComponents = () => {
                 <div className="overflow-hidden">
                   <img
                     src={item.image}
-                    alt=""
+                    alt="portfolio image"
+                    loading="lazy"
                     className="rounded-sm group-hover:scale-110 duration-300 ease-in-out"
                   />
                 </div>
@@ -73,7 +74,8 @@ const PortfolioComponents = () => {
                 <div className="overflow-hidden">
                   <img
                     src={item.image}
-                    alt=""
+                    alt="portfolio image"
+                    loading="lazy"
                     className="rounded-sm group-hover:scale-110 duration-300 ease-in-out"
                   />
                 </div>

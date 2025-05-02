@@ -34,6 +34,7 @@ const BlogDetailsComponents = () => {
           <img
             src={blog3}
             alt="blog detail"
+            loading="lazy"
             className="w-full h-60 lg:h-80 object-cover rounded-lg shadow-lg"
           />
         </div>

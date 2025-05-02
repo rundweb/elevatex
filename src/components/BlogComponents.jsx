@@ -37,6 +37,7 @@ const BlogComponents = () => {
                 <img
                   src={item.coverImage}
                   alt="blog-elevatex"
+                  loading="lazy"
                   className="h-72 w-full object-cover rounded-xl"
                 />
                 <p>
@@ -75,6 +76,7 @@ const BlogComponents = () => {
                 <img
                   src={item.coverImage}
                   alt="blog-elevatex"
+                  loading="lazy"
                   className="h-72 w-full object-cover rounded-xl"
                 />
                 <div className="flex flex-col gap-4">

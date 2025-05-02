@@ -11,6 +11,7 @@ const ContactComponents = () => {
           <img
             src={contact}
             alt="contact-elevatex"
+            loading="lazy"
             className="w-full h-screen object-cover rounded-2xl"
           />
         </div>

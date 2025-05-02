@@ -11,14 +11,16 @@ const ImageHome = () => {
           <img
             className="h-60 md:h-80 w-full object-cover rounded-lg"
             src={home4}
-            alt=""
+            alt="home image"
+            loading="lazy"
           />
         </div>
         <div>
           <img
             className="h-auto max-w-full rounded-lg"
             src={home2}
-            alt=""
+            alt="home image"
+            loading="lazy"
           />
         </div>
       </div>
@@ -27,14 +29,16 @@ const ImageHome = () => {
           <img
             className="h-auto max-w-full rounded-lg"
             src={home1}
-            alt=""
+            alt="home image"
+            loading="lazy"
           />
         </div>
         <div>
           <img
             className="h-60 md:h-80 w-full object-cover rounded-lg"
             src={home3}
-            alt=""
+            alt="home image"
+            loading="lazy"
           />
         </div>
       </div>
