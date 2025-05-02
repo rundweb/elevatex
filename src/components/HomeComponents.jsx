@@ -10,7 +10,7 @@ const HomeComponents = () => {
       <div className="w-full flex flex-col gap-2">
         <div>
           <h1
-            className=" mb-4 text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl md:leading-tight dark:text-white"
+            className=" mb-4 text-3xl font-extrabold leading-tight text-gray-900 md:text-5xl md:leading-tight dark:text-white"
             data-aos="fade-up"
             data-aos-duration="1000"
           >

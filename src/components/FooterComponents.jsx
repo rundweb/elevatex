@@ -23,8 +23,8 @@ const FooterComponents = () => {
     { name: "Portfolio Detail", path: "/portfoliodetail" },
     { name: "Blog Detail", path: "/blogdetail" },
     { name: "Service Detail", path: "/service" },
-    { name: "Login", path: "/login" },
-    { name: "Register", path: "/Register" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "pricing", path: "/pricing" },
   ];
 
   const resources = [

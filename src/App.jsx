@@ -5,10 +5,13 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
-import { useEffect } from "react";
 import PortfolioDetail from "./components/PortfolioDetail";
 import Blog from "./pages/Blog";
 import BlogDetailsComponents from "./components/BlogDetailsComponents";
+
+import { useEffect } from "react";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -25,9 +28,19 @@ const App = () => {
         <Route exact path="/service" element={<Service />}></Route>
         <Route exact path="/testimonials" element={<Testimonial />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
-        <Route exact path="/portfoliodetail" element={<PortfolioDetail />}></Route>
+        <Route
+          exact
+          path="/portfoliodetail"
+          element={<PortfolioDetail />}
+        ></Route>
         <Route exact path="/blog" element={<Blog />}></Route>
-        <Route exact path="/blogdetail" element={<BlogDetailsComponents />}></Route>
+        <Route
+          exact
+          path="/blogdetail"
+          element={<BlogDetailsComponents />}
+        ></Route>
+        <Route exact path="/portfolio" element={<Portfolio />}></Route>
+        <Route exact path="/pricing" element={<Pricing />}></Route>
       </Routes>
     </div>
   );
